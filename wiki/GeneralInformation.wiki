@@ -4,7 +4,7 @@
 
 CMS Explorer copyright (c) 2010, Sunera, LLC.
 
- * by Chris Sullo (csullo [ @ ] sunera . com)
+ * by Chris Sullo (csullo / @ / sunera . com)
   * [http://security.sunera.com/ Sunera Security Blog]
   * [http://sunera.com/ Sunera.com]
 
