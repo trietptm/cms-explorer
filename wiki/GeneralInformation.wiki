@@ -1,0 +1,14 @@
+#summary License and Contact Information
+
+= Introduction =
+
+CMS Explorer copyright (c) 2010, Sunera, LLC.
+
+ * by Chris Sullo (csullo [ @ ] sunera . com)
+  * [http://security.sunera.com/ Sunera Security Blog]
+  * [http://sunera.com/ Sunera.com]
+
+Licensed under the GPL version 3.
+
+
+LibWhisker2 is Copyright (c) 2009, Jeff Forristal ([http://wiretrip.net/ wiretrip.net]).
