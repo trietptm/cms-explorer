@@ -11,4 +11,4 @@ CMS Explorer copyright (c) 2010, Sunera, LLC.
 Licensed under the GPL version 3.
 
 
-LibWhisker2 is Copyright (c) 2009, Jeff Forristal ([http://wiretrip.net/ wiretrip.net]).
+Libwhisker2 is Copyright (c) 2009, Jeff Forristal ([http://wiretrip.net/ wiretrip.net]).
