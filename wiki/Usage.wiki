@@ -13,13 +13,11 @@ If you specify an incorrect root level, CMS explorer will continue to run but th
 
 
 = Option List =
-||-bsproxyhost+||Bootstrap proxy host/ip to route findings through||
-||-bsproxyport+||Bootstrap proxy port for routed requests (default 8080)||
+||-bsproxy+||Bootstrap proxy to route findings through (fmt: host:port)||
 ||-explore||Look for files in the theme/plugin dir||
 ||-plugins||Look for plugins (default: on)||
 ||-pluginfile+||Plugin file list||
-||-proxyhost+ ||Proxy host/ip for requests||
-||-proxyport+||Proxy port for requests (default 8080)||
+||-proxy+ ||Proxy for requests (fmt: host:port)||
 ||-themes||Look for themes (default: on)||
 ||-themefile+||Theme file list (default: themes.txt)||
 ||-type$+||CMS type: Drupal, Wordpress, Joomla, Mambo||
@@ -31,13 +29,11 @@ If you specify an incorrect root level, CMS explorer will continue to run but th
 
 
 = Options Explained =
- * *bsproxyhost* (requires value): The proxy host/ip to route any found files through.
- * *bsproxyport* (requires value): The proxy port to route any found files through. Defaults to 8080.
+ * *bsproxy* (requires value): The proxy to route any found files through. Format can be like 'http://host:port/', 'host:port' or just 'host'. If port is not specified, the default is 80.
  * *explore*: Look for additional theme/plugin files. Only supported for Drupal and Wordpress.
  * *plugins*: Look for plugins/module/component files. By default this is enabled and both plugins and themes will be checked.
  * *pluginfile+* (requires value): Alternative plugin file list.
- * *proxyhost+* (requires value): Proxy host/ip for base requests.
- * *proxyport+* (requires value): Proxy port for base requests. Default is port 8080).
+ * *proxy+* (requires value): Proxy for base requests. Format can be like 'http://host:port/', 'host:port' or just 'host'. If port is not specified, the default is 80.
  * *themes* (requires value): Look for themes. By default this is enabled and both plugins and themes will be checked.
  * *themefile+* (requires value): Alternative theme file list.
  * *type+* (required, requires value): The CMS type to be tested: Drupal, Wordpress, Joomla/Mambo.
@@ -50,11 +46,11 @@ If you specify an incorrect root level, CMS explorer will continue to run but th
 
 Test for Wordpress plugins and themes against example.com, with low verbosity and explore for additional files. Route all "found" items using the bootstrap proxy running on port 8080 of localhost.
 
-  {{{perl cms-explorer.pl -url http://example.com/ -v 1 -bsproxyhost localhost -explore -type wordpress}}}
+  {{{perl cms-explorer.pl -url http://example.com/ -v 1 -bsproxy localhost:8080 -explore -type wordpress}}}
 
-Test for Wordpress themes on example.com using themelist.txt, with full verbosity and explore using the bootstrap proxy on port 8080 of .localhost.
+Test for Wordpress themes on example.com using themelist.txt, with full verbosity and explore using the bootstrap proxy on port 80 of localhost.
 
-  {{{perl cms-explorer.pl -url http://example.com/ -v 3 -bsproxyhost localhost -explore -themes -themefile themelist.txt -type wordpress}}}
+  {{{perl cms-explorer.pl -url http://example.com/ -v 3 -bsproxy localhost -explore -themes -themefile themelist.txt -type wordpress}}}
 
 Test for Drupal plugins/themes on example.com, with normal verbosity and no exploration.
 
