@@ -15,7 +15,7 @@ If you specify an incorrect root level, CMS explorer will continue to run but th
 
 = Installation =
  * Unpack archive
- * Edit cms-explorer.pl and look for this code to enter your API key:<pre>my $osvdb_api_key = "";</pre>
+ * Create the file 'osvdb.key' in the cms-explorer directory, and put your OSVDB API key on the first line. 
  * run ./cms-explorer.pl to ensure no errors are reported
 
 
@@ -40,7 +40,7 @@ If you specify an incorrect root level, CMS explorer will continue to run but th
 = Options Explained =
  * *bsproxy* (requires value): The proxy to route any found files through. Format can be like 'http://host:port/', 'host:port' or just 'host'. If port is not specified, the default is 80.
  * *explore*: Look for additional theme/plugin files. Only supported for Drupal and Wordpress.
- * *osvdb*: Check osvdb.org for vulnerabilities in the installed components. Requires an API key be set in cms-explorer.pl.
+ * *osvdb*: Check osvdb.org for vulnerabilities in the installed components. Requires an API key be in a file called osvdb.key.
  * *plugins*: Look for plugins/module/component files. By default this is enabled and both plugins and themes will be checked.
  * *pluginfile+* (requires value): Alternative plugin file list.
  * *proxy+* (requires value): Proxy for base requests. Format can be like 'http://host:port/', 'host:port' or just 'host'. If port is not specified, the default is 80.
