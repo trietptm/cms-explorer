@@ -66,6 +66,6 @@ Test for Drupal plugins/themes on example.com, with normal verbosity and no expl
 
   {{{perl cms-explorer.pl -url http://example.com/ -type drupal}}}
 
-Test for Mambo (or Joomla) components/modules and templates.
+Test for Mambo (or Joomla) components/modules and templates, and search OSVDB.
 
-  {{{perl wp-explorer.pl -url http://example.com/ -type joomla}}}
+  {{{perl wp-explorer.pl -url http://example.com/ -type joomla -osvdb}}}
