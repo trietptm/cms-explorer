@@ -15,6 +15,7 @@ If you specify an incorrect root level, CMS explorer will continue to run but th
 = Option List =
 ||-bsproxy+||Bootstrap proxy to route findings through (fmt: host:port)||
 ||-explore||Look for files in the theme/plugin dir||
+||-osvdb||Do OSVDB check for finds||
 ||-plugins||Look for plugins (default: on)||
 ||-pluginfile+||Plugin file list||
 ||-proxy+ ||Proxy for requests (fmt: host:port)||
@@ -31,6 +32,7 @@ If you specify an incorrect root level, CMS explorer will continue to run but th
 = Options Explained =
  * *bsproxy* (requires value): The proxy to route any found files through. Format can be like 'http://host:port/', 'host:port' or just 'host'. If port is not specified, the default is 80.
  * *explore*: Look for additional theme/plugin files. Only supported for Drupal and Wordpress.
+ * *osvdb*: Check osvdb.org for vulnerabilities in the installed components. Requires an API key be set in cms-explorer.pl.
  * *plugins*: Look for plugins/module/component files. By default this is enabled and both plugins and themes will be checked.
  * *pluginfile+* (requires value): Alternative plugin file list.
  * *proxy+* (requires value): Proxy for base requests. Format can be like 'http://host:port/', 'host:port' or just 'host'. If port is not specified, the default is 80.
